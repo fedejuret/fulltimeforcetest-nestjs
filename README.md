@@ -1,4 +1,4 @@
-# FullTimeForce Github Commits Challenge - Builded With NestJS
+# FullTimeForce Github Commits Challenge - Built With NestJS
 
 ## How to start?
 
