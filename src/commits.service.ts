@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import axios, { Axios } from 'axios';
-import { Commit, Convert } from './commit';
+import { Commit, Convert } from './commit.model';
 import { ErrorException } from './handlers/error.exception';
 
 @Injectable()
@@ -32,7 +32,7 @@ export class CommitsService {
     this._http = axios.create({
       baseURL: process.env.GITHUB_API_URL,
       headers: {
-        Authorization: `token ${process.env.ACCESS_TOKEN}`,
+        Authorization: `${process.env.ACCESS_TOKEN}`,
       },
     });
   }
